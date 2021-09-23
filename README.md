@@ -2,3 +2,12 @@
 <p align="center">
   <img width="800" height="800" src=./documents/model.png>
 </p>
+
+
+## Requirements
+
+## Data Preparation
+
+## Model Train
+
+## Model Test
