@@ -15,7 +15,7 @@ DSTTFN is implemented on those several public traffic datasets.
 ## Model Train
 PEMS03, PEMS04, PEMS07, PEMS08:
 ```
-python train.py --data PEMS08
+python train.py --dataset PEMS08
 ```
 
 
@@ -23,5 +23,5 @@ python train.py --data PEMS08
 ## Model Test
 PEMS03, PEMS04, PEMS07, PEMS08:
 ```
-python test.py --data PEMS08
+python test.py --dataset PEMS08
 ```
