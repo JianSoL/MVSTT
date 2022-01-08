@@ -1,7 +1,7 @@
 # MVSTT: A Multi-View Spatial-Temporal Transformer Network for Traffic
 Forecasting
 <p align="center">
-  <img width="800"  src=./model/model.jpg>
+  <img width="1000"  src=./model/model.jpg>
 </p>
 
 
