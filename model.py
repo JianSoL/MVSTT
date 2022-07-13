@@ -270,7 +270,7 @@ class STBlock(nn.Module):
 
 
 
-class DSTTFN(nn.Module):
+class MVSTT(nn.Module):
     def __init__(
             self,
             adj,
@@ -282,7 +282,7 @@ class DSTTFN(nn.Module):
             forward_expansion,
             dropout=0
     ):
-        super(DSTTFN, self).__init__()
+        super(MVSTT, self).__init__()
         self.conv1 = nn.Conv2d(in_channels, embed_size, 1)
         self.conv2 = nn.Conv2d(T_dim, output_T_dim, 1)
         self.conv3 = nn.Conv2d(embed_size, 1, 1)

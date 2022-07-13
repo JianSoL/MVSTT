@@ -6,7 +6,7 @@ import datetime
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from Dataloader import *
-from model import DSTTFN
+from model import MVSTT
 from utils import metric
 import argparse
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     # forward_expansion,
     # dropout = 0
 
-    model = DSTTFN(adj, args.in_dim, args.embed_size, args.seq_len, args.pre_len, args.heads, 4, args.dropout)
+    model = MVSTT(adj, args.in_dim, args.embed_size, args.seq_len, args.pre_len, args.heads, 4, args.dropout)
     model = model.to(device)
     criterion = nn.MSELoss()
 

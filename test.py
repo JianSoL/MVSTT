@@ -6,7 +6,7 @@ import datetime
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from Dataloader import *
-from model import DSTTFN
+from model import MVSTT
 from utils import metric
 import argparse
 import torch
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     # forward_expansion,
     # dropout = 0
 
-    model = DSTTFN(adj, args.in_dim, args.embed_size, args.seq_len, args.pre_len, args.heads, 4, args.dropout)
+    model = MVSTT(adj, args.in_dim, args.embed_size, args.seq_len, args.pre_len, args.heads, 4, args.dropout)
     model.load_state_dict(torch.load(r"D:\L\DSTTFN\DSTTFN\model\PEMS\PEMS08\2021-09-22\epoch+8+time 22-43-08.pkl"))
     model = model.to(device)
 
