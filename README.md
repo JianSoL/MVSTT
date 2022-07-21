@@ -26,5 +26,5 @@ The pre-trained model is available in Google Cloud Drive.[pre-trained model](htt
 
 PEMS03, PEMS04, PEMS07, PEMS08:
 ```
-python test.py --dataset PEMS08
+python test.py --dataset PEMS08 --model model/PEMS08/PEMS08.pkl
 ```
