@@ -12,17 +12,18 @@ import argparse
 import torch
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', type=str, default="PEMS08", help="the datasets name")
+parser.add_argument('--dataset', type=str, default="PEMS07", help="the datasets name")
 parser.add_argument('--train_rate', type=float, default=0.6, help="The ratio of training set")
 parser.add_argument('--seq_len', type=int, default=12, help="The length of input sequence")
 parser.add_argument('--pre_len', type=int, default=12, help="The length of output sequence")
-parser.add_argument('--batchsize', type=int, default=8, help="Number of training batches")
+parser.add_argument('--batchsize', type=int, default=2, help="Number of training batches")
 parser.add_argument('--heads', type=int, default=4, help="The number of heads of multi-head attention")
 parser.add_argument('--dropout', type=float, default=0, help="Dropout")
 parser.add_argument('--lr', type=float, default=0.0001, help="Learning rate")
 parser.add_argument('--in_dim', type=float, default=1, help="Dimensionality of input data")
 parser.add_argument('--embed_size', type=float, default=64, help="Embed_size")
 parser.add_argument('--epochs', type=int, default=100, help="epochs")
+parser.add_argument('--model', type=str,help="Trained model paths",default="model/PEMS07/PEMS07.pkl")
 args = parser.parse_args()
 
 if __name__ == "__main__":
@@ -46,7 +47,7 @@ if __name__ == "__main__":
     # dropout = 0
 
     model = MVSTT(adj, args.in_dim, args.embed_size, args.seq_len, args.pre_len, args.heads, 4, args.dropout)
-    model.load_state_dict(torch.load(r"D:\L\DSTTFN\DSTTFN\model\PEMS\PEMS08\2021-09-22\epoch+8+time 22-43-08.pkl"))
+    model.load_state_dict(torch.load(args.model))
     model = model.to(device)
 
 
