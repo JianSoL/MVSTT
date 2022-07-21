@@ -22,7 +22,7 @@ python train.py --dataset PEMS08
 
 
 ## Model Test
-The pre-trained model is available in Google Cloud Drive.[pre-trained model]
+The pre-trained model is available in Google Cloud Drive.[pre-trained model](https://drive.google.com/drive/folders/1SoO00z2BO_9sbZMNh2lx9WIanlOZb6B7?usp=sharing)
 
 PEMS03, PEMS04, PEMS07, PEMS08:
 ```
