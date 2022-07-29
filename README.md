@@ -6,9 +6,10 @@
 
 ## Requirements
 - python 3.7
-- pytorch
-- numpy
-- pandas
+- torch==1.7.1
+- scipy==1.7.0
+- pandas==1.3.1
+- numpy==1.20.3
 ## Data Preparation
 MVSTT is implemented on those several public traffic datasets.
 - **PEMS03**, **PEMS04**, **PEMS07** and **PEMS08** from [STSGCN (AAAI-20)](https://github.com/Davidham3/STSGCN).
