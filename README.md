@@ -5,7 +5,7 @@
 
 
 ## Requirements
-- python 3.7
+- python 3.7.0
 - torch==1.7.1
 - scipy==1.7.0
 - pandas==1.3.1
