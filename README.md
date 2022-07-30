@@ -18,6 +18,7 @@ MVSTT is implemented on those several public traffic datasets.
 PEMS03, PEMS04, PEMS07, PEMS08:
 
 Run python train.py with  parameters.
+- --dataset: the datasets name
 ```
 python train.py --dataset PEMS08
 ```
