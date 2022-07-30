@@ -39,6 +39,10 @@ python train.py --dataset PEMS08
 The pre-trained model is available in Google Cloud Drive.[pre-trained model](https://drive.google.com/drive/folders/1SoO00z2BO_9sbZMNh2lx9WIanlOZb6B7?usp=sharing)
 
 PEMS03, PEMS04, PEMS07, PEMS08:
+
+Run python test.py with  parameters.
+- --model: Trained model paths.
+
 ```
 python test.py --dataset PEMS08 --model model/PEMS08/PEMS08.pkl
 ```
