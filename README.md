@@ -18,7 +18,17 @@ MVSTT is implemented on those several public traffic datasets.
 PEMS03, PEMS04, PEMS07, PEMS08:
 
 Run python train.py with  parameters.
-- --dataset: the datasets name
+- --dataset: The datasets name.
+- --train_rate: The ratio of training set.
+- --seq_len: The length of input sequence.
+- --pre_len: The length of output sequence.
+- --batchsize: Number of training batches.
+- --heads: The number of heads of multi-head attention.
+- --dropout: Dropout.
+- --lr: Learning rate.
+- --in_dim: Dimensionality of input data.
+- --embed_size: Embedded dimension.
+- --epochs：The number of train epochs.
 ```
 python train.py --dataset PEMS08
 ```
